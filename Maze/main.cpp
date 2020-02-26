@@ -80,8 +80,8 @@ void draw(){
                     text_input[i]+="__";
                 }
                 if(i == 64){
-                    cout<<"_";
-                    text_input[i]+="_";
+                    cout<<"e";
+                    text_input[i]+="e`";
                 }
                 if(i == 1){
                     cout<<"|";
@@ -121,7 +121,7 @@ int main(){
     draw();
     string file_name = "",_time = __TIMESTAMP__;
     ofstream fout;
-    fout.open("/Users/erolf0123/Desktop/c++/Maze/Maze/Maze_data/"+_time+".out");
+    fout.open("/Users/erolf0123/Desktop/c++/Maze/Maze/Matst/"+_time+".out");
     for(int i=64; i>=1; i--) fout<<text_input[i]<<'\n';
     fout.close();
 }
