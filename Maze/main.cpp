@@ -120,9 +120,8 @@ int main(){
     create_maze(2,2);
     draw();
     string file_name = "",_time = __TIMESTAMP__;
-    cout<<_time<<'\n';
     ofstream fout;
-    fout.open("/Users/erolf0123/Desktop/c++/Maze/Maze/Maze_data/"+_time);
+    fout.open("/Users/erolf0123/Desktop/c++/Maze/Maze/Maze_data/"+_time+".out");
     for(int i=64; i>=1; i--) fout<<text_input[i]<<'\n';
     fout.close();
 }
